@@ -29,14 +29,17 @@ class Club():
 
     def print_member_list(self):
         # your code goes here!
-        if self.president != "":
-            print("- %s (%d years old, President) - %s" % (self.president.name, self.president.age, self.president.bio))
-        print(*self.members_list,sep="\n")
+        print("Members: ")
+        for person in self.members_list:
+            if person is self.president:
+                print("- %s (%s years old, President) - %s\n" % (person.name, person.age, person.bio))
+            else:
+                print("- %s (%s years old) - %s\n" % (person.name, person.age, person.bio))
 
     def print_club(self):
         print(" %s \n %s " % (self.name, self.description))
-        print("Members: ")
         self.print_member_list()
+        print("Average age in this club: %d" % self.average_age())
 
     def average_age(self):
         total=0

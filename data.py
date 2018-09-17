@@ -41,36 +41,38 @@ for person in people:
 
 
 book = Club("Book Club", "A book club")
-book.recruit_member(steve)
+book.assign_president(ron)
 book.recruit_member(ron)
+book.recruit_member(steve)
 book.recruit_member(maha)
 book.recruit_member(confession_bear)
 book.recruit_member(audrey)
-book.assign_president(ron)
+
 
 sports = Club("Sports Club", "A sports club")
+sports.recruit_member(jack)
+sports.assign_president(jack)
 sports.recruit_member(michelle)
 sports.recruit_member(john)
-sports.recruit_member(jack)
 sports.recruit_member(caesar)
 sports.recruit_member(marcus_aurelius)
-sports.assign_president(jack)
 
 coding = Club("Coding Club", "A coding club")
-coding.recruit_member(dude)
 coding.recruit_member(dudette)
+coding.assign_president(dudette)
+coding.recruit_member(dude)
 coding.recruit_member(forever_alone)
 coding.recruit_member(confession_bear)
 coding.recruit_member(asis)
-coding.assign_president(dudette)
 
 glub = Club("Glub Club", "A glubbing club")
+glub.recruit_member(fatma)
+glub.assign_president(fatma)
 glub.recruit_member(steve)
 glub.recruit_member(john)
 glub.recruit_member(maha)
-glub.recruit_member(fatma)
 glub.recruit_member(caesar)
-glub.assign_president(fatma)
+
 
 
 clubs = [book, sports, coding, glub]
